@@ -2,12 +2,12 @@
 // ==================================================================
 
 
-// get date
+// get day
 // declare variables
 let today = new Date();
 let day = today.getDay();
 
-// create an array of dates
+// create an array of days
 let week = [
     "Sunday",
     "Monday",
@@ -28,6 +28,7 @@ let sec = today.getSeconds();
 let prepand = (hour >= 12)? " PM ":" AM ";
 hour = (hour >= 12)? hour - 12:hour;
 
+// After Noon 12:00 PM to 0:00 AM
 if (hour === 0 && prepand === 'PM')
 {
     if (min === 0 && sec === 0)
@@ -41,6 +42,7 @@ if (hour === 0 && prepand === 'PM')
     }
 }
 
+// Before Noon 0:00 AM to 12:00 PM
 if (hour === 0 && prepand === 'AM')
 {
     if (min === 0 && sec === 0)
