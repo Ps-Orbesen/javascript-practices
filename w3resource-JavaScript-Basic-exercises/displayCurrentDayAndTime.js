@@ -18,3 +18,41 @@ let week = [
     "Saturday"];
 
 console.log("Today is: " + week[day] + ".")
+
+// get time
+// declare variables
+let hour = today.getHours();
+let min = today.getMinutes();
+let sec = today.getSeconds();
+
+let prepand = (hour >= 12)? " PM ":" AM ";
+hour = (hour >= 12)? hour - 12:hour;
+
+if (hour === 0 && prepand === 'PM')
+{
+    if (min === 0 && sec === 0)
+    {
+        hour =12;
+        prepand= ' Noon';
+    }
+    else {
+        hour = 12;
+        prepand= ' PM';
+    }
+}
+
+if (hour === 0 && prepand === 'AM')
+{
+    if (min === 0 && sec === 0)
+    {
+        hour = 12;
+        prepand = ' Midnight';
+    }
+    else {
+        hour = 12;
+        prepand=' AM';
+    }
+}
+
+console.log(`Current Time : ${hour}${prepand} : ${min} : ${sec}`);
+
