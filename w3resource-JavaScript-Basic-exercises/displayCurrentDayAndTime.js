@@ -54,5 +54,5 @@ if (hour === 0 && prepand === 'AM')
     }
 }
 
-console.log(`Current Time : ${hour}${prepand} : ${min} : ${sec}`);
+console.log(`Current Time : ${hour}:${min}:${sec}${prepand}, ${week[day]}`);
 
