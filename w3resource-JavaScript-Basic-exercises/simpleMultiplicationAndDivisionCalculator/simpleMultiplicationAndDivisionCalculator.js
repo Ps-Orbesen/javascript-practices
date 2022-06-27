@@ -10,3 +10,12 @@ function multiplication()
     input2 = document.getElementById("num2").value;
     document.getElementById("result").innerHTML = input1 * input2;
 }
+
+// Create a function for Division
+
+function division() {
+    input1 = document.getElementById("num1").value;
+    input2 = document.getElementById("num2").value;
+    document.getElementById("result").innerHTML = input1 / input2;
+}
+
