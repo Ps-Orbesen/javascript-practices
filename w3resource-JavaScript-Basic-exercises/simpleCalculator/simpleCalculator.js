@@ -19,3 +19,19 @@ function division() {
     document.getElementById("result").innerHTML = input1 / input2;
 }
 
+// Create a function for Adding the number
+
+function addNumber() {
+    input1 = document.getElementById("num1").value;
+    input2 = document.getElementById("num2").value;
+    document.getElementById("result").innerHTML = input1 + input2;
+}
+
+// Create a function for subtracting the number
+
+function subtractNumber() {
+    input1 = document.getElementById("num1").value;
+    input2 = document.getElementById("num2").value;
+    document.getElementById("result").innerHTML = input1 - input2;
+}
+
