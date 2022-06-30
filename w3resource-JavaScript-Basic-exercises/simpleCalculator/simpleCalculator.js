@@ -24,7 +24,7 @@ function division() {
 function addNumber() {
     input1 = document.getElementById("num1").value;
     input2 = document.getElementById("num2").value;
-    document.getElementById("result").innerHTML = input1 + input2;
+    document.getElementById("result").innerHTML = Number(input1) + Number(input2);
 }
 
 // Create a function for subtracting the number
