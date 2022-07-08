@@ -26,7 +26,7 @@ function fizzBuzz () {
 
 }
 
-console.log(fizzBuzz(12))
+console.log(fizzBuzz())
 
 
 
