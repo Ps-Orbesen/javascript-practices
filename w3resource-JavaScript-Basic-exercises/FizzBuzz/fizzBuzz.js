@@ -23,7 +23,10 @@ function fizzBuzz () {
         else
             console.log(i);
     }
+
 }
+
+console.log(fizzBuzz(12))
 
 
 
