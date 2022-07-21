@@ -6,6 +6,10 @@ let count = 0;
 const value = document.querySelector("#value");
 const buttons = document.querySelectorAll(".btn");
 
-buttons.forEach(function (item) {
-    console.log(item);
+buttons.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+        console.log(e.currentTarget.classList);
+    });
 });
+
+console.log("hello")
